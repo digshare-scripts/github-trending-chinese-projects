@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "exports": "./src/script.ts",
   "dss": {
-    "schedule": "rate(1d)"
+    "schedule": "rate(30m)"
   },
   "dependencies": {
-    "@digshare/script": "0.4"
+    "@digshare/script": "0.4",
+    "cheerio": "1.0.0-rc.12",
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "@types/node": "18",
