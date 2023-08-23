@@ -76,7 +76,9 @@ export default script<State>(async (state = {projects: []}) => {
     .map(
       project =>
         `\
-- 📦 [${project.name}](https://github.com/${project.name}) ${project.language} ${project.stars}🌟+${project.weeklyStars}
+- 📦 [${project.name}](https://github.com/${project.name})
+  ${project.stars}**+${project.weeklyStars}**🌟
+  ${project.language}
   ${project.description}`,
     )
     .join('\n')}`,
